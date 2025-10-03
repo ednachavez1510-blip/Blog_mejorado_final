@@ -4,7 +4,7 @@ window.onload = function() {
   comentariosGuardados.forEach(c => mostrarComentario(c));
 }
 let pass = prompt("Introduce la contraseña para acceder al blog:");
-const passwordCorrecta = "4321";
+const passwordCorrecta = "1015";
 
 if (pass !== passwordCorrecta) {
     document.body.innerHTML = "<h1>Acceso denegado ❌</h1>";
