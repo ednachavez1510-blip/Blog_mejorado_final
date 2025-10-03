@@ -1,3 +1,8 @@
+// --- Comentarios ---
+window.onload = function() {
+  const comentariosGuardados = JSON.parse(localStorage.getItem('comentarios')) || [];
+  comentariosGuardados.forEach(c => mostrarComentario(c));
+}
 let pass = prompt("Introduce la contraseña para acceder al blog:");
 const passwordCorrecta = "4321";
 
@@ -9,12 +14,6 @@ if (pass !== passwordCorrecta) {
         const comentariosGuardados = JSON.parse(localStorage.getItem('comentarios')) || [];
         comentariosGuardados.forEach(c => mostrarComentario(c));
     }
-}
-
-// --- Comentarios ---
-window.onload = function() {
-  const comentariosGuardados = JSON.parse(localStorage.getItem('comentarios')) || [];
-  comentariosGuardados.forEach(c => mostrarComentario(c));
 }
 
 // Vista previa de imagen
